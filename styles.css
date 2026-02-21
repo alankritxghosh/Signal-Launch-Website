@@ -1683,6 +1683,8 @@ img, video { display: block; max-width: 100%; }
   align-items: center;
   justify-content: center;
   gap: 10px;
+  text-decoration: none;
+  cursor: none;
 }
 
 .btn-download:hover {
@@ -1701,6 +1703,192 @@ img, video { display: block; max-width: 100%; }
   font-size: 0.58rem;
   color: rgba(240, 244, 248, 0.3);
   margin-top: 16px;
+}
+
+/* ---- INSTALL GUIDE ---- */
+
+.install-guide {
+  max-width: 420px;
+  margin-top: 32px;
+  position: relative;
+  z-index: 2;
+}
+
+.install-guide-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(240, 244, 248, 0.08);
+}
+
+.install-guide-icon {
+  color: var(--steel-blue);
+  display: flex;
+  opacity: 0.7;
+}
+
+.install-guide-title {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: 0.75rem;
+  letter-spacing: -0.02em;
+  color: var(--cold-white);
+}
+
+.install-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.install-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(240, 244, 248, 0.04);
+}
+
+.install-step:last-child { border-bottom: none; }
+
+.install-step-num {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 0.65rem;
+  letter-spacing: -0.04em;
+  color: var(--steel-blue);
+  flex-shrink: 0;
+  padding-top: 1px;
+  opacity: 0.6;
+}
+
+.install-step-content {
+  flex: 1;
+}
+
+.install-step-text {
+  font-family: var(--font-mono);
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 1.65;
+  color: rgba(240, 244, 248, 0.55);
+  letter-spacing: -0.01em;
+}
+
+.install-step-text strong {
+  font-weight: 400;
+  color: var(--cold-white);
+}
+
+.install-note {
+  margin-top: 20px;
+  padding: 16px;
+  background: rgba(139, 174, 212, 0.04);
+  border: 1px solid rgba(139, 174, 212, 0.08);
+  border-radius: 4px;
+}
+
+.install-note-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: 0.6rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--steel-blue);
+  margin-bottom: 6px;
+}
+
+.install-note-text {
+  font-family: var(--font-mono);
+  font-weight: 300;
+  font-size: 0.65rem;
+  line-height: 1.7;
+  color: rgba(240, 244, 248, 0.4);
+}
+
+.install-troubleshoot {
+  margin-top: 12px;
+}
+
+.install-troubleshoot-summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: 0.65rem;
+  letter-spacing: -0.01em;
+  color: rgba(240, 244, 248, 0.35);
+  cursor: pointer;
+  padding: 10px 0;
+  list-style: none;
+  transition: color 0.3s ease;
+}
+
+.install-troubleshoot-summary::-webkit-details-marker { display: none; }
+
+.install-troubleshoot-summary:hover { color: var(--cold-white); }
+
+.install-troubleshoot-summary svg {
+  color: rgba(240, 244, 248, 0.25);
+  flex-shrink: 0;
+}
+
+.install-troubleshoot-content {
+  padding: 14px 16px;
+  background: rgba(240, 244, 248, 0.02);
+  border: 1px solid rgba(240, 244, 248, 0.05);
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+.install-troubleshoot-content p {
+  font-family: var(--font-mono);
+  font-weight: 300;
+  font-size: 0.65rem;
+  line-height: 1.7;
+  color: rgba(240, 244, 248, 0.4);
+  margin-bottom: 10px;
+}
+
+.install-troubleshoot-content ol {
+  list-style: none;
+  counter-reset: troubleshoot;
+  padding: 0;
+  margin: 0;
+}
+
+.install-troubleshoot-content li {
+  counter-increment: troubleshoot;
+  font-family: var(--font-mono);
+  font-weight: 300;
+  font-size: 0.65rem;
+  line-height: 1.8;
+  color: rgba(240, 244, 248, 0.45);
+  padding-left: 20px;
+  position: relative;
+}
+
+.install-troubleshoot-content li::before {
+  content: counter(troubleshoot) '.';
+  position: absolute;
+  left: 0;
+  color: var(--steel-blue);
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.install-troubleshoot-content strong {
+  font-weight: 400;
+  color: rgba(240, 244, 248, 0.65);
+}
+
+.install-troubleshoot-content em {
+  font-style: italic;
+  color: rgba(240, 244, 248, 0.3);
 }
 
 /* ---- FOOTER ---- */

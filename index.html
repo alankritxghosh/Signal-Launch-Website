@@ -673,16 +673,83 @@
       <h2 class="beta-headline">Download Signal</h2>
       <p class="beta-sub">Private beta · macOS 13+ · Apple Silicon + Intel</p>
 
-      <button class="btn-download">
+      <a href="https://github.com/alankritxghosh/Signal-Launch-Website/releases/download/v0.1.0/Signal-0.1.0-arm64.dmg" download class="btn-download">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
           <polyline points="7 10 12 15 17 10"/>
           <line x1="12" y1="15" x2="12" y2="3"/>
         </svg>
         Download for macOS
-      </button>
+      </a>
 
-      <p class="beta-meta">v0.1.0 · 12MB · Free during beta</p>
+      <p class="beta-meta">v0.1.0 · 91MB · Free during beta</p>
+    </div>
+
+    <div class="install-guide reveal">
+      <div class="install-guide-header">
+        <div class="install-guide-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 16v-4"/>
+            <path d="M12 8h.01"/>
+          </svg>
+        </div>
+        <h3 class="install-guide-title">How to install</h3>
+      </div>
+
+      <div class="install-steps">
+        <div class="install-step">
+          <span class="install-step-num">01</span>
+          <div class="install-step-content">
+            <span class="install-step-text">Open the downloaded <strong>.dmg</strong> file</span>
+          </div>
+        </div>
+        <div class="install-step">
+          <span class="install-step-num">02</span>
+          <div class="install-step-content">
+            <span class="install-step-text">Drag <strong>Signal</strong> into your <strong>Applications</strong> folder</span>
+          </div>
+        </div>
+        <div class="install-step">
+          <span class="install-step-num">03</span>
+          <div class="install-step-content">
+            <span class="install-step-text">Open <strong>Finder</strong> → <strong>Applications</strong> → right-click <strong>Signal</strong> → select <strong>Open</strong></span>
+          </div>
+        </div>
+        <div class="install-step">
+          <span class="install-step-num">04</span>
+          <div class="install-step-content">
+            <span class="install-step-text">A dialog will appear — click <strong>"Open"</strong> to confirm</span>
+          </div>
+        </div>
+        <div class="install-step">
+          <span class="install-step-num">05</span>
+          <div class="install-step-content">
+            <span class="install-step-text">Signal appears in your <strong>menu bar</strong> (top-right). You're done.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="install-note">
+        <span class="install-note-label">Why right-click?</span>
+        <p class="install-note-text">Signal is downloaded directly from this website, not the Mac App Store. macOS requires you to manually approve apps from independent developers on first launch. This is a one-time step — after that, Signal opens normally.</p>
+      </div>
+
+      <details class="install-troubleshoot">
+        <summary class="install-troubleshoot-summary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
+          Still blocked? (macOS Sequoia 15+)
+        </summary>
+        <div class="install-troubleshoot-content">
+          <p>On newer macOS versions, right-click → Open may not be enough. In that case:</p>
+          <ol>
+            <li>Open <strong>System Settings</strong> → <strong>Privacy & Security</strong></li>
+            <li>Scroll down — you'll see: <em>"Signal was blocked from use because it is not from an identified developer"</em></li>
+            <li>Click <strong>Open Anyway</strong></li>
+            <li>Enter your password and click <strong>Open</strong></li>
+          </ol>
+        </div>
+      </details>
     </div>
   </section>
 
