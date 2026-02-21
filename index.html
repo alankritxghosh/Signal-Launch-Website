@@ -713,13 +713,18 @@
         <div class="install-step">
           <span class="install-step-num">03</span>
           <div class="install-step-content">
-            <span class="install-step-text">Open <strong>Finder</strong> → <strong>Applications</strong> → right-click <strong>Signal</strong> → select <strong>Open</strong></span>
+            <span class="install-step-text">Open <strong>Terminal</strong> (search "Terminal" in Spotlight) and paste this command:</span>
+            <div class="install-command">
+              <code id="install-cmd">xattr -cr /Applications/Signal.app</code>
+              <button class="install-copy-btn" onclick="navigator.clipboard.writeText('xattr -cr /Applications/Signal.app');this.textContent='Copied';setTimeout(()=>this.textContent='Copy',2000)">Copy</button>
+            </div>
+            <span class="install-step-hint">Press <strong>Enter</strong> to run it. This clears the macOS quarantine flag.</span>
           </div>
         </div>
         <div class="install-step">
           <span class="install-step-num">04</span>
           <div class="install-step-content">
-            <span class="install-step-text">A dialog will appear — click <strong>"Open"</strong> to confirm</span>
+            <span class="install-step-text">Open <strong>Signal</strong> from Applications. It will launch normally.</span>
           </div>
         </div>
         <div class="install-step">
@@ -731,25 +736,9 @@
       </div>
 
       <div class="install-note">
-        <span class="install-note-label">Why right-click?</span>
-        <p class="install-note-text">Signal is downloaded directly from this website, not the Mac App Store. macOS requires you to manually approve apps from independent developers on first launch. This is a one-time step — after that, Signal opens normally.</p>
+        <span class="install-note-label">Why the terminal step?</span>
+        <p class="install-note-text">Signal is distributed directly from this website, not the Mac App Store. macOS quarantines apps downloaded from the internet. The terminal command removes this flag so macOS lets Signal run. This is a one-time step — completely safe, and standard for independent Mac software.</p>
       </div>
-
-      <details class="install-troubleshoot">
-        <summary class="install-troubleshoot-summary">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
-          Still blocked? (macOS Sequoia 15+)
-        </summary>
-        <div class="install-troubleshoot-content">
-          <p>On newer macOS versions, right-click → Open may not be enough. In that case:</p>
-          <ol>
-            <li>Open <strong>System Settings</strong> → <strong>Privacy & Security</strong></li>
-            <li>Scroll down — you'll see: <em>"Signal was blocked from use because it is not from an identified developer"</em></li>
-            <li>Click <strong>Open Anyway</strong></li>
-            <li>Enter your password and click <strong>Open</strong></li>
-          </ol>
-        </div>
-      </details>
     </div>
   </section>
 

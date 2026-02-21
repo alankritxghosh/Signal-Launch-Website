@@ -1782,6 +1782,65 @@ img, video { display: block; max-width: 100%; }
   color: var(--cold-white);
 }
 
+.install-command {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin: 10px 0 8px;
+  background: var(--midnight);
+  border: 1px solid rgba(139, 174, 212, 0.15);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.install-command code {
+  flex: 1;
+  padding: 10px 14px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 400;
+  color: var(--steel-blue);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  overflow-x: auto;
+  user-select: all;
+  -webkit-user-select: all;
+}
+
+.install-copy-btn {
+  padding: 10px 14px;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: rgba(240, 244, 248, 0.4);
+  background: rgba(240, 244, 248, 0.04);
+  border-left: 1px solid rgba(139, 174, 212, 0.15);
+  cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease;
+  white-space: nowrap;
+}
+
+.install-copy-btn:hover {
+  color: var(--cold-white);
+  background: rgba(240, 244, 248, 0.08);
+}
+
+.install-step-hint {
+  display: block;
+  font-family: var(--font-mono);
+  font-weight: 300;
+  font-size: 0.6rem;
+  color: rgba(240, 244, 248, 0.3);
+  letter-spacing: -0.01em;
+}
+
+.install-step-hint strong {
+  font-weight: 400;
+  color: rgba(240, 244, 248, 0.5);
+}
+
 .install-note {
   margin-top: 20px;
   padding: 16px;
