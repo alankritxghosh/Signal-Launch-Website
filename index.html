@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Signal — Inbox clarity for founders. A macOS app that strips away noise and surfaces only what matters.">
+  <meta name="theme-color" content="#050A14">
+  <title>Signal — Your inbox, made legible.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,400;1,6..96,500;1,6..96,600;1,6..96,700;1,6..96,800;1,6..96,900&family=DM+Mono:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="/" class="nav-brand">
+      <svg class="nav-logo" width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="wave-blue" x1="0%" y1="100%" x2="50%" y2="0%">
+            <stop offset="0%" stop-color="#5a7fa8"/>
+            <stop offset="100%" stop-color="#8BAED4"/>
+          </linearGradient>
+          <linearGradient id="wave-light" x1="50%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#F0F4F8" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#8BAED4" stop-opacity="0.25"/>
+          </linearGradient>
+        </defs>
+        <path d="M1 28 Q5 28 9 18 Q13 8 16 8 Q19 8 22 16 Q26 24 30 27 L30 28 L1 28 Z" fill="url(#wave-blue)"/>
+        <path d="M10 28 Q14 28 17 20 Q20 12 22 12 Q24 12 26 18 Q28 24 31 26 L31 28 L10 28 Z" fill="url(#wave-light)"/>
+        <circle cx="16" cy="4" r="2.5" fill="#8BAED4"/>
+      </svg>
+      <span class="nav-wordmark">Signal<sup>®</sup></span>
+    </a>
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" aria-hidden="true">
+    <a href="#about">About <span class="nav-num">01</span></a>
+    <a href="#features">Features <span class="nav-num">02</span></a>
+    <a href="#download">Download <span class="nav-num">03</span></a>
+    <a href="changelog.html">Changelog <span class="nav-num">04</span></a>
+  </div>
+
+  <!-- ======== HERO ======== -->
+  <section class="hero" id="hero">
+    <div class="hero-video-bg" data-blur-target>
+      <video autoplay muted loop playsinline>
+        <source src="assets/videos/hero.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="crosshair pulse" style="top:25%; right:30%"></div>
+    <div class="crosshair pulse" style="top:40%; right:15%; animation-delay:-2s"></div>
+
+    <div class="hero-content reveal">
+      <p class="hero-body">
+        Pick a plan, submit your inbox, and your clarity <span class="muted">will arrive within 24 hours.</span>
+      </p>
+      <div class="hero-cta">
+        <a href="#download" class="cta-link">Explore Now <span class="bracket"></span></a>
+      </div>
+      <div class="hero-services">
+        <span class="hero-service-label"><span class="num">01/</span> Intelligent Sort</span>
+        <span class="hero-service-label">Automation Rules</span>
+        <span class="hero-service-label">Native macOS</span>
+      </div>
+      <div class="hero-bottom">
+        <span>© 2026</span>
+        <span>SG-26'</span>
+      </div>
+    </div>
+
+    <div class="hero-wordmark" aria-hidden="true">Signal</div>
+  </section>
+
+  <!-- ======== ABOUT ======== -->
+  <section class="section-about" id="about">
+    <div class="section-bar">
+      <span class="bar-left"><span class="diamond">◆</span> (01)</span>
+      <span class="bar-center">(About)</span>
+      <span class="bar-right">© 2026</span>
+    </div>
+
+    <h2 class="about-headline reveal">
+      Design-forward inbox management crafting bold clarity, <span class="medium">structured automation, and high-impact email filtering inspired by precision aesthetics®.</span>
+    </h2>
+
+    <div class="about-grid reveal">
+      <div class="about-labels">
+        <span class="about-label-tag">(Pre)</span>
+        <span class="about-label-tag">(+Post)</span>
+        <span class="about-label-tag">(=Results)</span>
+      </div>
+      <div class="about-descriptions">
+        <p class="about-desc">Igniting inbox clarity with precision and intentional design. Signal transforms raw email chaos into structured visual systems that shape how founders process information.</p>
+        <p class="about-desc">Driven by bold automation and functional simplicity. Signal blends modern intelligence with purposeful filtering, delivering refined email experiences that push productivity forward.</p>
+        <div class="about-stats">
+          <div class="about-stat-row">
+            <span>Beta founders</span>
+            <span class="stat-val">2,847</span>
+          </div>
+          <div class="about-stat-row">
+            <span>Clarity rate</span>
+            <span class="stat-val">100%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#download" class="cta-link reveal">Explore Now <span class="bracket"></span></a>
+
+  </section>
+
+  <!-- ======== BEFORE & AFTER ======== -->
+  <section class="section-compare" id="compare">
+    <div class="section-bar">
+      <span class="bar-left"><span class="diamond">◆</span> (02)</span>
+      <span class="bar-center">(Before & After)</span>
+      <span class="bar-right">© 2026</span>
+    </div>
+
+    <h2 class="compare-headline reveal">
+      Your inbox, transformed.
+    </h2>
+    <p class="compare-sub reveal">147 emails in. 12 that matter out. Same Gmail, different reality.</p>
+
+    <div class="compare-container reveal">
+      <div class="compare-side compare-before">
+        <div class="compare-label">Before Signal</div>
+        <div class="mock-gmail">
+          <div class="mock-gmail-toolbar">
+            <div class="mock-gmail-search">
+              <span class="mock-search-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+              </span>
+              <span class="mock-search-text">Search mail</span>
+            </div>
+            <div class="mock-gmail-unread">47 unread</div>
+          </div>
+          <div class="mock-gmail-tabs">
+            <span class="mock-tab active">Primary</span>
+            <span class="mock-tab">Promotions <span class="mock-badge">23</span></span>
+            <span class="mock-tab">Updates <span class="mock-badge">18</span></span>
+          </div>
+          <div class="mock-email-list">
+            <div class="mock-email unread"><span class="mock-sender">LinkedIn</span><span class="mock-subject">You have 12 new notifications — Your weekly...</span><span class="mock-time">9:41 AM</span></div>
+            <div class="mock-email unread"><span class="mock-sender">Sarah Chen</span><span class="mock-subject">Re: Series A deck — Updated financials attached</span><span class="mock-time">9:38 AM</span></div>
+            <div class="mock-email unread"><span class="mock-sender">Substack</span><span class="mock-subject">The Generalist: Why AI agents are overhyp...</span><span class="mock-time">9:30 AM</span></div>
+            <div class="mock-email unread"><span class="mock-sender">Apollo.io</span><span class="mock-subject">Quick question about your GTM strategy...</span><span class="mock-time">9:22 AM</span></div>
+            <div class="mock-email unread"><span class="mock-sender">Notion</span><span class="mock-subject">Your weekly digest — 3 pages updated</span><span class="mock-time">9:15 AM</span></div>
+            <div class="mock-email unread"><span class="mock-sender">Calendly</span><span class="mock-subject">New event: Product sync with David</span><span class="mock-time">9:02 AM</span></div>
+            <div class="mock-email unread"><span class="mock-sender">Stripe</span><span class="mock-subject">Your payout for Feb 2026 is on the way</span><span class="mock-time">8:47 AM</span></div>
+            <div class="mock-email unread"><span class="mock-sender">ColdEmailGuy</span><span class="mock-subject">I'd love to connect — saw your post about...</span><span class="mock-time">8:31 AM</span></div>
+            <div class="mock-email unread"><span class="mock-sender">Product Hunt</span><span class="mock-subject">Daily digest: Top 5 products launching today</span><span class="mock-time">8:00 AM</span></div>
+            <div class="mock-email unread"><span class="mock-sender">GitHub</span><span class="mock-subject">[Signal] PR #47 merged: Fix classifier thre...</span><span class="mock-time">7:44 AM</span></div>
+            <div class="mock-email unread"><span class="mock-sender">Mark Johnson</span><span class="mock-subject">Follow up on our conversation last week</span><span class="mock-time">7:30 AM</span></div>
+            <div class="mock-email"><span class="mock-sender">AWS</span><span class="mock-subject">Your monthly bill for January 2026</span><span class="mock-time">Yesterday</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="compare-divider">
+        <div class="compare-divider-line"></div>
+        <div class="compare-divider-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </div>
+        <div class="compare-divider-line"></div>
+      </div>
+
+      <div class="compare-side compare-after">
+        <div class="compare-label">After Signal</div>
+        <div class="mock-gmail mock-gmail-clean">
+          <div class="mock-gmail-toolbar">
+            <div class="mock-gmail-search">
+              <span class="mock-search-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+              </span>
+              <span class="mock-search-text">Search mail</span>
+            </div>
+            <div class="mock-gmail-unread clean">3 unread</div>
+          </div>
+          <div class="mock-gmail-tabs">
+            <span class="mock-tab active">Primary</span>
+            <span class="mock-tab">Promotions</span>
+            <span class="mock-tab">Updates</span>
+          </div>
+          <div class="mock-email-list">
+            <div class="mock-email unread important"><span class="mock-sender">Sarah Chen</span><span class="mock-subject">Re: Series A deck — Updated financials attached</span><span class="mock-time">9:38 AM</span></div>
+            <div class="mock-email unread important"><span class="mock-sender">Calendly</span><span class="mock-subject">New event: Product sync with David</span><span class="mock-time">9:02 AM</span></div>
+            <div class="mock-email unread"><span class="mock-sender">Stripe</span><span class="mock-subject">Your payout for Feb 2026 is on the way</span><span class="mock-time">8:47 AM</span></div>
+          </div>
+          <div class="mock-gmail-sidebar">
+            <div class="mock-sidebar-title">Labels</div>
+            <div class="mock-sidebar-label"><span class="label-dot" style="background:#8BAED4"></span>Signal / Follow-ups <span class="label-count">2</span></div>
+            <div class="mock-sidebar-label"><span class="label-dot" style="background:#5a7fa8"></span>Signal / Outreach <span class="label-count">8</span></div>
+            <div class="mock-sidebar-label"><span class="label-dot" style="background:#3d6694"></span>Signal / Newsletters <span class="label-count">6</span></div>
+            <div class="mock-sidebar-label"><span class="label-dot" style="background:#1B3A6B"></span>Signal / Promotions <span class="label-count">28</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== HOW IT WORKS ======== -->
+  <section class="section-flow" id="flow">
+    <div class="section-bar">
+      <span class="bar-left"><span class="diamond">◆</span> (03)</span>
+      <span class="bar-center">(How It Works)</span>
+      <span class="bar-right">© 2026</span>
+    </div>
+
+    <h2 class="flow-headline reveal">
+      Three steps to clarity.
+    </h2>
+
+    <div class="flow-panels">
+      <div class="flow-panel reveal">
+        <div class="flow-panel-header">
+          <span class="flow-step">01</span>
+          <span class="flow-arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </span>
+        </div>
+        <div class="flow-icon">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="8" y="12" width="48" height="36" rx="3"/>
+            <path d="M8 22h48"/>
+            <circle cx="32" cy="38" r="8" stroke-dasharray="4 3"/>
+            <path d="M28 38h8M32 34v8" stroke-width="1"/>
+          </svg>
+        </div>
+        <h3 class="flow-title">Reads</h3>
+        <p class="flow-desc">Signal scans incoming email metadata — sender, subject line, and snippet. Your full email body is never accessed.</p>
+        <div class="flow-meta">
+          <span>Sender</span>
+          <span>Subject</span>
+          <span>Snippet</span>
+        </div>
+      </div>
+
+      <div class="flow-connector" aria-hidden="true">
+        <svg width="40" height="2" viewBox="0 0 40 2"><line x1="0" y1="1" x2="40" y2="1" stroke="rgba(139,174,212,0.3)" stroke-width="1" stroke-dasharray="4 4"/></svg>
+      </div>
+
+      <div class="flow-panel reveal" style="transition-delay:0.15s">
+        <div class="flow-panel-header">
+          <span class="flow-step">02</span>
+          <span class="flow-arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </span>
+        </div>
+        <div class="flow-icon">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="6" y="10" width="22" height="18" rx="2"/>
+            <rect x="6" y="36" width="22" height="18" rx="2"/>
+            <rect x="36" y="10" width="22" height="18" rx="2"/>
+            <rect x="36" y="36" width="22" height="18" rx="2"/>
+            <path d="M12 16h10M12 22h6" stroke-width="1" opacity="0.5"/>
+            <path d="M12 42h10M12 48h6" stroke-width="1" opacity="0.5"/>
+            <path d="M42 16h10M42 22h6" stroke-width="1" opacity="0.5"/>
+            <path d="M42 42h10M42 48h6" stroke-width="1" opacity="0.5"/>
+          </svg>
+        </div>
+        <h3 class="flow-title">Classifies</h3>
+        <p class="flow-desc">AI sorts every message into four categories. No manual rules needed — Signal learns your signal from your noise.</p>
+        <div class="flow-buckets">
+          <span class="flow-bucket"><span class="bucket-dot" style="background:#8BAED4"></span>Follow-ups</span>
+          <span class="flow-bucket"><span class="bucket-dot" style="background:#5a7fa8"></span>Outreach</span>
+          <span class="flow-bucket"><span class="bucket-dot" style="background:#3d6694"></span>Newsletters</span>
+          <span class="flow-bucket"><span class="bucket-dot" style="background:#1B3A6B"></span>Promotions</span>
+        </div>
+      </div>
+
+      <div class="flow-connector" aria-hidden="true">
+        <svg width="40" height="2" viewBox="0 0 40 2"><line x1="0" y1="1" x2="40" y2="1" stroke="rgba(139,174,212,0.3)" stroke-width="1" stroke-dasharray="4 4"/></svg>
+      </div>
+
+      <div class="flow-panel reveal" style="transition-delay:0.3s">
+        <div class="flow-panel-header">
+          <span class="flow-step">03</span>
+        </div>
+        <div class="flow-icon">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="8" y="12" width="48" height="36" rx="3"/>
+            <path d="M8 22h48"/>
+            <path d="M24 34l5 5 11-11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="flow-title">Acts</h3>
+        <p class="flow-desc">Noise is archived and labeled. Signal stays in your inbox. You see only what demands your attention.</p>
+        <div class="flow-result">
+          <span class="flow-result-num">92%</span>
+          <span class="flow-result-label">noise eliminated</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FEATURES / PREMIUM SERVICES ======== -->
+  <section class="section-features" id="features">
+    <div class="section-bar">
+      <span class="bar-left"><span class="diamond">◆</span> (04)</span>
+      <span class="bar-center">(Premium Features)</span>
+      <span class="bar-right">© 2026</span>
+    </div>
+
+    <h2 class="features-headline reveal">
+      Precision-built inbox engine delivering structured clarity, <span class="medium">refined email systems, and high-impact automation shaped by aesthetics & Signal®.</span>
+    </h2>
+
+    <div class="features-cta reveal">
+      <a href="#download" class="cta-link">Explore More <span class="bracket"></span></a>
+    </div>
+
+    <div class="feature-entry reveal">
+      <span class="feature-num">01</span>
+      <div class="feature-body">
+        <div class="feature-image scale-reveal">
+          <img src="assets/images/signal-menubar.png" alt="Signal menu bar widget showing real-time inbox activity, filtering stats, and quick actions" class="feature-img-crop">
+        </div>
+        <h3 class="feature-title">Intelligent Sort</h3>
+        <span class="feature-subtitle">Priority Ranking</span>
+        <p class="feature-desc">Every message ranked by what it means to you, not by when it arrived. Signal scores sender reputation, thread importance, and content relevance to surface only what demands your attention.</p>
+      </div>
+    </div>
+
+    <div class="feature-entry reveal">
+      <span class="feature-num">02</span>
+      <div class="feature-body">
+        <div class="feature-image scale-reveal">
+          <img src="assets/images/signal-labels.png" alt="Gmail sidebar showing Signal labels — Follow-ups, Newsletters, Outreach, Promotions" class="feature-img-contain">
+        </div>
+        <h3 class="feature-title">Automation Rules</h3>
+        <span class="feature-subtitle">Preference Encoding</span>
+        <p class="feature-desc">Your preferences, encoded. Create natural-language rules that learn the patterns you'd set yourself. Signal adapts to your workflow, not the other way around.</p>
+      </div>
+    </div>
+
+    <div class="feature-entry reveal">
+      <span class="feature-num">03</span>
+      <div class="feature-body">
+        <div class="feature-image scale-reveal">
+          <video autoplay muted loop playsinline style="object-position: center 70%">
+            <source src="assets/videos/hero.mp4" type="video/mp4">
+          </video>
+        </div>
+        <h3 class="feature-title">Native on macOS</h3>
+        <span class="feature-subtitle">Pure Performance</span>
+        <p class="feature-desc">Built in SwiftUI. No Electron. No compromise. Signal runs natively on Apple Silicon and Intel, delivering the speed and polish you expect from premium macOS software.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== MENU BAR STATES ======== -->
+  <section class="section-states" id="states">
+    <div class="section-bar">
+      <span class="bar-left"><span class="diamond">◆</span> (05)</span>
+      <span class="bar-center">(App States)</span>
+      <span class="bar-right">© 2026</span>
+    </div>
+
+    <h2 class="states-headline reveal">
+      Always in control.
+    </h2>
+    <p class="states-sub reveal">Signal lives in your menu bar. Connect, pause, or disconnect — you decide when it runs.</p>
+
+    <div class="states-strip">
+      <div class="state-card reveal">
+        <div class="state-header">
+          <span class="state-dot disconnected"></span>
+          <span class="state-status">Disconnected</span>
+        </div>
+        <div class="state-mock">
+          <div class="state-mock-icon">S</div>
+          <div class="state-mock-body">
+            <p class="state-mock-title">Signal isn't connected to Gmail</p>
+            <p class="state-mock-desc">Connect your account to start filtering</p>
+          </div>
+          <div class="state-mock-btn connect">Connect Gmail</div>
+        </div>
+      </div>
+
+      <div class="state-card reveal" style="transition-delay:0.12s">
+        <div class="state-header">
+          <span class="state-dot active"></span>
+          <span class="state-status">Active</span>
+        </div>
+        <div class="state-mock">
+          <div class="state-mock-icon active-icon">S</div>
+          <div class="state-mock-body">
+            <p class="state-mock-title">Today's Activity</p>
+            <div class="state-mock-stats">
+              <div class="state-stat">
+                <span class="state-stat-num">23</span>
+                <span class="state-stat-label">Surfaced</span>
+              </div>
+              <div class="state-stat">
+                <span class="state-stat-num">118</span>
+                <span class="state-stat-label">Filtered</span>
+              </div>
+            </div>
+            <div class="state-mock-live">
+              <span class="live-dot"></span>
+              Signal Active
+            </div>
+          </div>
+          <div class="state-mock-controls">
+            <span class="state-ctrl">Pause</span>
+            <span class="state-ctrl">Rules</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="state-card reveal" style="transition-delay:0.24s">
+        <div class="state-header">
+          <span class="state-dot paused"></span>
+          <span class="state-status">Paused</span>
+        </div>
+        <div class="state-mock">
+          <div class="state-mock-icon paused-icon">S</div>
+          <div class="state-mock-body">
+            <p class="state-mock-title">Signal is paused</p>
+            <p class="state-mock-desc">Inbox changes won't be processed</p>
+          </div>
+          <div class="state-mock-btn resume">Resume</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== MARQUEE BANNER ======== -->
+  <div class="marquee-banner">
+    <div class="bg-image">
+      <video autoplay muted loop playsinline>
+        <source src="assets/videos/hero.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="crosshair pulse"></div>
+    <div class="crosshair pulse" style="animation-delay:-1s"></div>
+    <div class="crosshair pulse" style="animation-delay:-2s"></div>
+    <div class="crosshair pulse" style="animation-delay:-3s"></div>
+    <div>
+      <div class="marquee-text-wrap">
+        <div class="marquee-text">
+          <span>We Are Faster, Smarter And Clearer</span>
+          <span>We Are Faster, Smarter And Clearer</span>
+          <span>We Are Faster, Smarter And Clearer</span>
+          <span>We Are Faster, Smarter And Clearer</span>
+        </div>
+      </div>
+      <div class="banner-cta" style="text-align:center; margin-top:24px; position:relative; z-index:3">
+        <a href="#download" class="cta-link" style="justify-content:center; border-color: rgba(240,244,248,0.25)">Request Access <span class="bracket"></span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== STATS ======== -->
+  <section class="section-stats" id="stats">
+    <div class="section-bar">
+      <span class="bar-left"><span class="diamond">◆</span> (06)</span>
+      <span class="bar-center">(Stats)</span>
+      <span class="bar-right">© 2026</span>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-cell reveal">
+        <div class="bracket-corner"></div>
+        <div class="stat-number">2,847</div>
+        <div class="stat-label">Beta Founders</div>
+        <div class="stat-sub">Early access waitlist</div>
+      </div>
+      <div class="stat-cell reveal" style="transition-delay:0.1s">
+        <div class="bracket-corner"></div>
+        <div class="stat-number">147</div>
+        <div class="stat-label">Avg. Daily Emails</div>
+        <div class="stat-sub">Per founder processed</div>
+      </div>
+      <div class="stat-cell reveal" style="transition-delay:0.2s">
+        <div class="bracket-corner"></div>
+        <div class="stat-number">12</div>
+        <div class="stat-label">That Actually Matter</div>
+        <div class="stat-sub">After Signal filtering</div>
+      </div>
+      <div class="stat-cell reveal" style="transition-delay:0.3s">
+        <div class="bracket-corner"></div>
+        <div class="stat-number">92%</div>
+        <div class="stat-label">Noise Eliminated</div>
+        <div class="stat-sub">Average reduction</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== PRIVACY / TRUST ======== -->
+  <section class="section-trust" id="trust">
+    <div class="section-bar">
+      <span class="bar-left"><span class="diamond">◆</span> (07)</span>
+      <span class="bar-center">(Privacy)</span>
+      <span class="bar-right">© 2026</span>
+    </div>
+
+    <div class="trust-header reveal">
+      <h2 class="trust-headline">
+        What Signal sees. <span class="medium">What it doesn't.</span>
+      </h2>
+      <p class="trust-sub">You're granting Gmail API access to a beta app. Here's exactly what that means — no fine print.</p>
+    </div>
+
+    <div class="trust-cards">
+      <div class="trust-card trust-card--yes reveal">
+        <div class="trust-card-glow"></div>
+        <div class="trust-card-inner">
+          <div class="trust-card-top">
+            <div class="trust-badge yes">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </div>
+            <span class="trust-card-label">Signal accesses</span>
+            <span class="trust-card-count">4 permissions</span>
+          </div>
+
+          <div class="trust-items">
+            <div class="trust-item reveal-child">
+              <div class="trust-item-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <div class="trust-item-content">
+                <span class="trust-item-title">Sender name & address</span>
+                <span class="trust-item-desc">To identify who's emailing you</span>
+              </div>
+              <div class="trust-item-tag">read-only</div>
+            </div>
+
+            <div class="trust-item reveal-child" style="transition-delay:0.06s">
+              <div class="trust-item-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2Z"/><path d="m22 6-10 7L2 6"/></svg>
+              </div>
+              <div class="trust-item-content">
+                <span class="trust-item-title">Subject lines</span>
+                <span class="trust-item-desc">To classify email intent</span>
+              </div>
+              <div class="trust-item-tag">read-only</div>
+            </div>
+
+            <div class="trust-item reveal-child" style="transition-delay:0.12s">
+              <div class="trust-item-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M16 13H8M16 17H8M10 9H8"/></svg>
+              </div>
+              <div class="trust-item-content">
+                <span class="trust-item-title">Email snippet</span>
+                <span class="trust-item-desc">First ~100 characters for context</span>
+              </div>
+              <div class="trust-item-tag">read-only</div>
+            </div>
+
+            <div class="trust-item reveal-child" style="transition-delay:0.18s">
+              <div class="trust-item-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/></svg>
+              </div>
+              <div class="trust-item-content">
+                <span class="trust-item-title">Gmail labels</span>
+                <span class="trust-item-desc">To create and apply Signal categories</span>
+              </div>
+              <div class="trust-item-tag">read+write</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="trust-card trust-card--no reveal" style="transition-delay:0.12s">
+        <div class="trust-card-inner">
+          <div class="trust-card-top">
+            <div class="trust-badge no">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+            </div>
+            <span class="trust-card-label">Signal never touches</span>
+            <span class="trust-card-count">0 access</span>
+          </div>
+
+          <div class="trust-items">
+            <div class="trust-item reveal-child" style="transition-delay:0.12s">
+              <div class="trust-item-icon blocked">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
+              </div>
+              <div class="trust-item-content">
+                <span class="trust-item-title">Full email bodies</span>
+                <span class="trust-item-desc">Content is never read or stored</span>
+              </div>
+              <div class="trust-item-tag blocked">blocked</div>
+            </div>
+
+            <div class="trust-item reveal-child" style="transition-delay:0.18s">
+              <div class="trust-item-icon blocked">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+              </div>
+              <div class="trust-item-content">
+                <span class="trust-item-title">Attachments</span>
+                <span class="trust-item-desc">Files, images, PDFs — untouched</span>
+              </div>
+              <div class="trust-item-tag blocked">blocked</div>
+            </div>
+
+            <div class="trust-item reveal-child" style="transition-delay:0.24s">
+              <div class="trust-item-icon blocked">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </div>
+              <div class="trust-item-content">
+                <span class="trust-item-title">Passwords & credentials</span>
+                <span class="trust-item-desc">OAuth tokens stay on your machine</span>
+              </div>
+              <div class="trust-item-tag blocked">blocked</div>
+            </div>
+
+            <div class="trust-item reveal-child" style="transition-delay:0.3s">
+              <div class="trust-item-icon blocked">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
+              </div>
+              <div class="trust-item-content">
+                <span class="trust-item-title">Contacts & calendar</span>
+                <span class="trust-item-desc">Only inbox scope — nothing else</span>
+              </div>
+              <div class="trust-item-tag blocked">blocked</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="trust-footer reveal">
+      <a href="privacy.html" class="cta-link">Read Full Privacy Policy <span class="bracket"></span></a>
+    </div>
+  </section>
+
+  <!-- ======== BETA DOWNLOAD ======== -->
+  <section class="section-beta" id="download">
+    <div class="section-bar">
+      <span class="bar-left"><span class="diamond">◆</span> (08)</span>
+      <span class="bar-center">(Download)</span>
+      <span class="bar-right">© 2026</span>
+    </div>
+
+    <div class="beta-orb beta-orb-1"></div>
+    <div class="beta-orb beta-orb-2"></div>
+
+    <div class="beta-card reveal">
+      <div class="beta-icon-logo" aria-hidden="true">
+        <svg width="40" height="40" viewBox="0 0 32 32" fill="none">
+          <defs>
+            <linearGradient id="dl-wave-blue" x1="0%" y1="100%" x2="50%" y2="0%">
+              <stop offset="0%" stop-color="#5a7fa8"/>
+              <stop offset="100%" stop-color="#8BAED4"/>
+            </linearGradient>
+            <linearGradient id="dl-wave-light" x1="50%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#F0F4F8" stop-opacity="0.5"/>
+              <stop offset="100%" stop-color="#8BAED4" stop-opacity="0.25"/>
+            </linearGradient>
+          </defs>
+          <path d="M1 28 Q5 28 9 18 Q13 8 16 8 Q19 8 22 16 Q26 24 30 27 L30 28 L1 28 Z" fill="url(#dl-wave-blue)"/>
+          <path d="M10 28 Q14 28 17 20 Q20 12 22 12 Q24 12 26 18 Q28 24 31 26 L31 28 L10 28 Z" fill="url(#dl-wave-light)"/>
+          <circle cx="16" cy="4" r="2.5" fill="#8BAED4"/>
+        </svg>
+      </div>
+      <h2 class="beta-headline">Download Signal</h2>
+      <p class="beta-sub">Private beta · macOS 13+ · Apple Silicon + Intel</p>
+
+      <button class="btn-download">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        Download for macOS
+      </button>
+
+      <p class="beta-meta">v0.1.0 · 12MB · Free during beta</p>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="section-bar">
+      <span class="bar-left"><span class="diamond">◆</span> (09)</span>
+      <span class="bar-center">(Contact)</span>
+      <span class="bar-right">© 2026</span>
+    </div>
+
+    <nav aria-label="Footer navigation">
+      <ul class="footer-nav-list">
+        <li><a href="#about">About <span class="nav-num">01</span></a></li>
+        <li><a href="#features">Features <span class="nav-num">02</span></a></li>
+        <li><a href="#download">Download <span class="nav-num">03</span></a></li>
+        <li><a href="changelog.html">Changelog <span class="nav-num">04</span></a></li>
+        <li><a href="privacy.html">Privacy <span class="nav-num">05</span></a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-crosshairs">
+      <div class="crosshair"></div>
+      <div class="crosshair"></div>
+      <div class="crosshair"></div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Signal</p>
+      <p>Built by Alankrit</p>
+    </div>
+
+    <div class="footer-wordmark-large" aria-hidden="true">Signal</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
